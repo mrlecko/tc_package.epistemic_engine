@@ -1,0 +1,20 @@
+name: epistemic.single_lens_stoic
+description: >
+  Single-lens epistemic profile: always and only apply the Stoic Rationalist
+  lens to the user's question. Useful for demos and pedagogy.
+
+applies_to:
+  - conversation
+
+bundle: bundle.epistemic_engine_core_v1
+
+llm_template: openai_gpt4o_chat
+
+output:
+  format: markdown
+  include_capsule_ids: false
+  include_judgment_summary: false
+
+style:
+  tone: reflective
+  verbosity: medium

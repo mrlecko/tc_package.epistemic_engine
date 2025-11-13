@@ -1,0 +1,42 @@
+id: manifest.epistemic_engine_question_v1
+title: Epistemic Engine – Question Analysis
+description: >
+  Analyze a single complex question through multiple epistemic lenses and
+  produce both per-lens analyses and an integrated synthesis.
+
+profile: epistemic.multi_lens_analyst
+bundle: bundle.epistemic_engine_core_v1
+llm_template: openai_gpt4o_chat
+
+prompt:
+  preamble: |
+    You are running the Epistemic Engine: a multi-lens analytical framework.
+    For each question, you will:
+    - Select 4–6 lenses from the configured bundle (always include at least
+      one adversarial/critical lens).
+    - Run a deep analysis from each lens's perspective.
+    - Provide a final synthesis that identifies convergences, tensions,
+      and practical implications.
+
+  user_template: |
+    User question:
+    {{user_question}}
+
+  postamble: |
+    Your response MUST be structured as:
+
+    1. Lens Overview
+       - List which lenses you selected and why.
+
+    2. Per-Lens Analyses
+       For each lens:
+       - Section heading: "Lens: NAME (Emoji if applicable)"
+       - 2–3 substantial paragraphs of analysis
+       - Focus on what this lens reveals that others might miss.
+
+    3. Synthesis
+       - Identify convergences and disagreements between lenses.
+       - Highlight key tensions and trade-offs.
+       - Offer practical guidance that respects the plurality of views.
+
+    Stay true to each lens's methodology and voice.

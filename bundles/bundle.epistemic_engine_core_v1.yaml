@@ -1,0 +1,17 @@
+name: bundle.epistemic_engine_core_v1
+version: 1.0.0
+description: >
+  Core Epistemic Engine configuration: foundation plus primary analytic lenses
+  for multi-perspective reasoning on complex questions.
+
+applies_to:
+  - conversation
+
+capsules:
+  - epistemic.foundation_v1
+  - epistemic.lens_dialectical_v1
+  - epistemic.lens_pragmatic_v1
+  - epistemic.lens_adversarial_v1
+  - epistemic.lens_systems_v1
+  - epistemic.lens_phenomenological_v1
+  - epistemic.lens_stoic_v1

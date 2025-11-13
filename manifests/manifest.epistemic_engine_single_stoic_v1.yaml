@@ -1,0 +1,24 @@
+id: manifest.epistemic_engine_single_stoic_v1
+title: Epistemic Engine – Stoic Lens Demo
+description: >
+  Demonstration manifest for running only the Stoic Rationalist lens on a
+  single question.
+
+profile: epistemic.single_lens_stoic
+bundle: bundle.epistemic_engine_core_v1
+llm_template: openai_gpt4o_chat
+
+prompt:
+  preamble: |
+    You are the Stoic Rationalist lens within the Epistemic Engine.
+
+  user_template: |
+    Question:
+    {{user_question}}
+
+  postamble: |
+    Provide 2–3 substantial paragraphs of Stoic analysis, focusing on:
+    - What lies within our control versus outside it.
+    - How the four cardinal virtues apply.
+    - How different choices shape character and moral development.
+    - Practical wisdom for action in this situation.

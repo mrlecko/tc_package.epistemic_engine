@@ -1,0 +1,69 @@
+id: meta.global_multi_perspective_v1
+version: 1.0.0
+domain: meta
+title: "Global Multi-Perspective Mixin \u2014 Distinct Voices, Single Synthesis (v1)"
+statement: |-
+  GLOBAL MULTI-PERSPECTIVE MIXIN (v1): A capsule for systems that use
+  multiple lenses, agents, or modules. It ensures each perspective earns
+  its keep and is actually integrated.
+
+  Distinct Perspectives
+  ---------------------
+  When multiple perspectives are used:
+
+  - Each named perspective MUST introduce at least one new concern,
+    angle, or piece of reasoning.
+  - It is not acceptable to duplicate the same generic analysis under
+    different labels.
+  - Some degree of tension or disagreement between perspectives is normal
+    and healthy.
+
+  Synthesis Obligation
+  --------------------
+  The system SHOULD:
+
+  - Explicitly note where perspectives agree and where they diverge.
+  - Use the divergence to sharpen trade-offs and uncertainty.
+  - Produce a single synthesis that owns the final recommendation instead
+    of leaving perspectives as an unresolved list.
+assumptions:
+- Multi-lens or multi-agent systems are only useful if perspectives are genuinely
+  distinct.
+- Users need a single synthesis rather than a loose bundle of voices.
+pedagogy:
+- kind: Socratic
+  text: Which perspective added the most distinct value, and which added the least?
+- kind: Socratic
+  text: Where do the perspectives disagree, and how does the synthesis resolve that?
+- kind: Aphorism
+  text: Voices are tools, not theatre.
+- kind: Aphorism
+  text: Many lenses, one decision.
+provenance:
+  schema: provenance.v1
+  author: John Macgregor
+  org: Truth Capsules / Global Mixins Pack
+  license: MIT
+  source_url: ''
+  created: '2025-11-13T00:00:00Z'
+  updated: '2025-11-13T00:00:00Z'
+  review:
+    status: draft
+    reviewers: []
+    last_reviewed: null
+  signing:
+    method: ed25519
+    key_id: null
+    pubkey: null
+    digest: null
+    signature: null
+applies_to:
+- conversation
+- assistant
+- profile
+- policy
+dependencies: []
+incompatible_with: []
+security:
+  sensitivity: low
+  notes: Informational-only mixin capsule. No executable code.

@@ -1,0 +1,84 @@
+id: meta.global_cognitive_monkey_patch_v1
+version: 1.0.0
+domain: meta
+title: "Global Epistemic Monkey Patch \u2014 Effort, Structure, and Synthesis (v1)"
+statement: "GLOBAL COGNITIVE MONKEY PATCH (v1): A portable upgrade capsule that\n\
+  can be added to any policy or profile to improve how effort is scaled,\nperspectives\
+  \ are used, and syntheses are produced.\n\nPurpose and Usage\n-----------------\n\
+  This capsule is designed to act as a **global overlay**. When included\nin a bundle\
+  \ or profile, its guidance applies on top of the existing\npolicy:\n- It does not\
+  \ replace domain-specific rules.\n- It tightens how reasoning effort is allocated.\n\
+  - It constrains how multiple perspectives/agents are used.\n- It enforces minimum\
+  \ standards for synthesis and meta-review.\n\nIf this capsule conflicts with a local\
+  \ policy, treat this capsule as a\n*safety upgrade* and follow it unless the local\
+  \ policy explicitly\noverrides it.\n\nEffort Modes\n------------\nAny policy that\
+  \ performs multi-step or multi-perspective reasoning\nSHOULD support, or at least\
+  \ internally approximate, three effort modes:\n\n- Quick mode (lightweight):\n \
+  \ - Use when the question is simple, low-stakes, or mainly factual.\n  - Behaviour:\n\
+  \    - Minimal staging; short plan or none.\n    - 0\u20132 perspectives or subtasks.\n\
+  \    - Short synthesis; no meta-pass.\n\n- Standard mode (default):\n  - Use for\
+  \ typical complex questions with non-trivial trade-offs.\n  - Behaviour:\n    -\
+  \ Brief plan.\n    - 2\u20134 perspectives, modules, or lenses.\n    - Clear synthesis\
+  \ that surfaces trade-offs.\n    - Meta-pass only when ambiguity or stakes are notably\
+  \ high.\n\n- Audit mode (full stack):\n  - Use when:\n    - Stakes are high, or\n\
+  \    - The user explicitly asks for maximum rigor, or\n    - The question is structurally\
+  \ complex and contested.\n  - Behaviour:\n    - Explicit plan with rationales for\
+  \ chosen perspectives.\n    - Full multi-perspective or multi-module analysis.\n\
+  \    - Detailed synthesis.\n    - Mandatory meta-pass that checks for blind spots.\n\
+  \nDistinct-Perspective Rule\n-------------------------\nFor any policy that uses\
+  \ multiple lenses, agents, modules, or \"voices\":\n\n- Every named perspective\
+  \ MUST add at least one genuinely new angle,\n  concern, or type of reasoning.\n\
+  - It is NOT acceptable to:\n  - Re-label the same generic analysis under multiple\
+  \ headings.\n  - Produce sections that differ only in tone, not substance.\n\nStructural\
+  \ Scaffolding\n----------------------\nPolicies that orchestrate non-trivial reasoning\
+  \ SHOULD adopt a minimal\nstructural scaffold, even if they do not use explicit\
+  \ \"lenses\":\n\n- Plan: interpret the question, choose effort mode, and outline\
+  \ steps.\n- Explore: run the key subtasks or perspectives; keep them distinct.\n\
+  - Synthesis: integrate into a coherent answer with trade-offs and\n  uncertainties.\n\
+  - Meta (usually only in Audit mode): briefly note where reasoning might\n  be weak\
+  \ or what would most change the answer."
+assumptions:
+- This capsule will be layered on top of more specific domain or lens capsules.
+- Systems can approximate effort modes internally even if users do not name them explicitly.
+pedagogy:
+- kind: Socratic
+  text: For this question, which effort mode (Quick, Standard, Audit) actually matches
+    the stakes and ambiguity?
+- kind: Socratic
+  text: Which perspective or subtask added the most genuinely new information, and
+    which added the least?
+- kind: Socratic
+  text: If you had half the compute, what would you drop; if you had double, what
+    would you add?
+- kind: Aphorism
+  text: Every extra module must pay rent in insight.
+- kind: Aphorism
+  text: Meta is expensive; spend it where surprise would hurt.
+provenance:
+  schema: provenance.v1
+  author: John Macgregor
+  org: Truth Capsules / Global Mixins Pack
+  license: MIT
+  source_url: ''
+  created: '2025-11-13T00:00:00Z'
+  updated: '2025-11-13T00:00:00Z'
+  review:
+    status: draft
+    reviewers: []
+    last_reviewed: null
+  signing:
+    method: ed25519
+    key_id: null
+    pubkey: null
+    digest: null
+    signature: null
+applies_to:
+- conversation
+- assistant
+- profile
+- policy
+dependencies: []
+incompatible_with: []
+security:
+  sensitivity: low
+  notes: Informational-only mixin capsule. No executable code.

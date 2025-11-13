@@ -1,0 +1,5 @@
+Example user question for the Epistemic Engine:
+
+"Should a small AI startup open-source its core model weights, given
+the potential benefits to the community but also the competitive and
+safety risks involved?"

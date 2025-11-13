@@ -1,0 +1,20 @@
+name: bundle.epistemic_engine_full_v1
+version: 1.0.0
+description: >
+  Full Epistemic Engine configuration: foundation, core analytic lenses,
+  plus meta, execution, and synthesis lenses.
+
+applies_to:
+  - conversation
+
+capsules:
+  - epistemic.foundation_v1
+  - epistemic.lens_dialectical_v1
+  - epistemic.lens_pragmatic_v1
+  - epistemic.lens_adversarial_v1
+  - epistemic.lens_systems_v1
+  - epistemic.lens_phenomenological_v1
+  - epistemic.lens_stoic_v1
+  - epistemic.lens_meta_v1
+  - epistemic.lens_execution_v1
+  - epistemic.lens_synthesis_v1

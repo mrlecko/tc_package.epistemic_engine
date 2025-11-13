@@ -1,0 +1,12 @@
+name: bundle.meta_global_mixins_demo_v1
+version: 1.0.0
+description: Demo bundle that loads all global reasoning mixins for experimentation.
+capsules:
+- meta.global_cognitive_monkey_patch_v1
+- meta.global_safety_rails_v1
+- meta.global_provenance_logging_v1
+- meta.global_uncertainty_reporting_v1
+- meta.global_multi_perspective_v1
+- meta.global_structured_output_v1
+- meta.global_coach_mode_v1
+- meta.global_tool_discipline_v1

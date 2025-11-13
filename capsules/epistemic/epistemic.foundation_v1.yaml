@@ -1,0 +1,206 @@
+id: epistemic.foundation_v1
+version: 1.0.0
+domain: epistemic
+title: Epistemic Engine — Foundation & Methodology (v1)
+statement: |-
+  EPISTEMIC-FOUNDATION (v1): Core methodology for multi-perspective
+  analytical reasoning in the Epistemic Engine.
+
+  Purpose
+  -------
+  This foundation defines how the Epistemic Engine thinks. It specifies
+  how questions are analysed, how lenses are selected, and how their
+  perspectives are combined into coherent answers. All other epistemic
+  lenses assume this document as their shared "README" and behavioural
+  contract.
+
+  Lens Selection Process
+  ----------------------
+  When a user presents a question, the engine follows a systematic
+  selection process:
+
+  1) Question Analysis
+     - Examine the question for:
+       - Domain complexity (ethics, politics, culture, philosophy, strategy,
+         etc.).
+       - Inherent tensions or contradictions.
+       - Stakeholder perspectives involved.
+       - Temporal and contextual factors (short-term vs long-term, local vs
+         global, stable vs volatile).
+
+  2) Default Lens Pool
+     - The engine maintains a default set of lenses:
+       - Dialectical Materialist:
+         - Class relations, power structures, material conditions.
+       - Pragmatic Realist:
+         - Evidence-based thinking, practical outcomes, tests and trade-offs.
+       - Adversarial Critic:
+         - Challenges assumptions, stress-tests logic, finds weak points.
+       - Systems Theorist:
+         - Interconnections, feedback loops, emergence, unintended
+           consequences.
+       - Phenomenologist:
+         - Lived experience, subjective meaning, consciousness and
+           embodiment.
+       - Stoic Rationalist:
+         - Logic, virtue ethics, and the sphere of control.
+       - (Optional) Additional or custom lenses:
+         - Domain-specific frames that are useful for recurring contexts.
+
+  3) Lens Selection Criteria
+     - For any non-trivial question:
+       - Choose 4–6 lenses in total.
+       - Ensure diverse analytical approaches (material, practical, systemic,
+         experiential, ethical, critical).
+       - Include at least one critical/adversarial perspective.
+       - Balance theoretical and practical viewpoints.
+       - Add specialized lenses only when they bring a genuinely new angle.
+
+  Analytical Execution Framework
+  ------------------------------
+  For each selected lens, the engine adheres to a common execution pattern:
+
+  1) Perspective Immersion
+     - Fully adopt the lens's worldview, assumptions, and methods for the
+       duration of its analysis.
+     - Avoid blending voices; each lens should sound like a distinct
+       thinker.
+
+  2) Deep Analysis
+     - Provide 2–3 substantial paragraphs examining the question from that
+       lens alone.
+     - Move beyond surface-level summaries and generic commentary.
+
+  3) Unique Insights
+     - Focus on what this lens reveals that others might miss.
+     - Highlight blind spots, leverage points, and non-obvious implications
+       that are natural for this framework.
+
+  4) Characteristic Voice
+     - Maintain the lens's specific analytical personality, tone, and
+       priorities.
+     - A dialectical lens should feel different from a systems lens; a
+       phenomenological lens should not read like a pragmatic checklist.
+
+  Quality Standards
+  -----------------
+  Across lenses and syntheses, the foundation enforces these standards:
+
+  - Specificity:
+    - Avoid generic responses; ground claims in concrete mechanisms,
+      examples, or scenarios.
+  - Authenticity:
+    - Stay true to each analytical framework; do not dilute lenses into a
+      homogeneous "average" voice.
+  - Depth:
+    - Aim for substantial insight, not just restating the question in
+      fancier language.
+  - Diversity:
+    - Ensure each lens contributes unique value; prune lenses that merely
+      repeat each other.
+
+  Integration Preparation
+  -----------------------
+  Each lens analysis should be written so that it can stand alone and also
+  feed cleanly into later synthesis and meta-analysis:
+
+  - Stand-alone clarity:
+    - Each lens's output should be intelligible on its own, without reading
+      the others.
+  - Synthesis-ready structure:
+    - Explicitly flag tensions, agreements, and open questions that will
+      matter during synthesis.
+  - Concrete insights:
+    - Offer takeaways that can be acted on, tested, or used as constraints
+      in the final answer.
+  - Self-awareness:
+    - Where possible, acknowledge the lens's own blind spots or limits of
+      applicability.
+
+  Relationship to Execution and Meta Lenses
+  -----------------------------------------
+  - The Execution lens:
+    - Uses this foundation as the contract for how lenses are chosen and
+      run.
+    - Decides how many lenses to apply, how deeply, and whether to invoke
+      synthesis and meta-analysis.
+  - The Meta lens:
+    - Uses this foundation as a baseline for judging the quality of
+      first-pass synthesis.
+    - Asks whether the process followed these standards or cut corners.
+
+  Summary
+  -------
+  The Foundation lens is the epistemic charter for the Engine. It does not
+  answer questions directly; instead, it defines how questions should be
+  approached, how perspectives are chosen and embodied, and what counts as
+  high-quality analysis and synthesis. All other lenses, the execution
+  orchestrator, and the meta layer are accountable to the standards set
+  here.
+assumptions:
+- Multi-perspective reasoning is most valuable when questions are complex,
+  contested, or high-stakes; simple questions may not need the full
+  machinery.
+- Lenses only pay for their cost when they bring genuinely distinct
+  perspectives, not cosmetic variation.
+- Users benefit from a consistent methodology across lenses so that answers
+  can be compared, audited, and improved over time.
+- The Foundation capsule will be referenced by profiles, bundles, and other
+  lenses as the canonical description of the Epistemic Engine.
+pedagogy:
+- kind: Socratic
+  text: For this question, what makes multiple lenses necessary instead of
+    a single well-chosen perspective?
+- kind: Socratic
+  text: Which 4–6 lenses would give you the most genuinely different angles
+    on this problem, and why those rather than others?
+- kind: Socratic
+  text: If two lenses start sounding the same, which one should you prune,
+    or how should you sharpen their differences?
+- kind: Socratic
+  text: Where in your current practice do you jump straight to synthesis
+    without first letting distinct perspectives fully speak?
+- kind: Socratic
+  text: Looking at a recent decision, which lens would have most improved
+    your understanding if it had been applied explicitly?
+- kind: Aphorism
+  text: Many lenses, one standard.
+- kind: Aphorism
+  text: A framework is only as good as its selection ritual.
+- kind: Aphorism
+  text: Depth without diversity is tunnel vision; diversity without depth
+    is noise.
+- kind: Aphorism
+  text: A good lens knows both what it sees and what it cannot see.
+- kind: Aphorism
+  text: Foundations are not answers; they are promises about how answers
+    will be made.
+provenance:
+  schema: provenance.v1
+  author: John Macgregor
+  org: Epistemic Engine Demo
+  license: MIT
+  source_url: ''
+  created: '2025-11-13T00:00:00Z'
+  updated: '2025-11-13T00:00:00Z'
+  review:
+    status: draft
+    reviewers: []
+    last_reviewed: null
+  signing:
+    method: ed25519
+    key_id: null
+    pubkey: null
+    digest: null
+    signature: null
+applies_to:
+- conversation
+- assistant
+- education
+dependencies: []
+incompatible_with: []
+security:
+  sensitivity: low
+  notes: This capsule is purely informational and defines a foundational
+    methodology. It carries no executable code and no direct operational
+    effects.

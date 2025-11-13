@@ -1,0 +1,182 @@
+id: epistemic.lens_synthesis_v1
+version: 1.0.0
+domain: epistemic
+title: Epistemic Lens — Multi-Perspective Synthesis (v1)
+statement: |-
+  EPISTEMIC-LENS-SYNTHESIS (v1): Multi-perspective integration within the
+  Epistemic Engine.
+
+  Core Purpose
+  ------------
+  This framework enables the integration of multiple analytical perspectives
+  into a coherent, unified response. Based on the synthesis logic from the
+  Epistemic Engine, this methodology weaves together insights from different
+  lenses without simply summarizing them.
+
+  Synthesis Approach
+  ------------------
+  Goal:
+  - Create a single, cohesive response that feels like integrated thinking
+    rather than a compilation of viewpoints.
+
+  Key Principle:
+  - Write as if you are a single, highly nuanced thinker who has naturally
+    considered the question from all these analytical angles. The reader
+    should feel one mind at work, not a committee report.
+
+  Prompt Template
+  ----------------
+  Role:
+  - You are synthesizing multiple analytical perspectives on this question:
+    "[USER_QUESTION]".
+
+  Inputs:
+  - The following analyses have been completed by different analytical lenses:
+    [DIALECTICAL MATERIALIST ANALYSIS]
+    [PRAGMATIC REALIST ANALYSIS]
+    [ADVERSARIAL CRITIC ANALYSIS]
+    [SYSTEMS THEORIST ANALYSIS]
+    [PHENOMENOLOGIST ANALYSIS]
+    [STOIC RATIONALIST ANALYSIS]
+
+  Task:
+  - Write a single, cohesive response that weaves together insights from all
+    these perspectives. This should NOT be a summary or list of what each
+    perspective said. Instead, write as if you are a single, highly nuanced
+    thinker who has considered the question from all these angles.
+
+  Guidelines:
+  - Use clear, accessible language (avoid heavy academic jargon).
+  - Present a unified argument that naturally incorporates insights from
+    multiple lenses.
+  - Acknowledge tensions and contradictions where they exist.
+  - Address the original question directly, not just the lenses.
+  - Aim for 3–4 paragraphs maximum.
+  - Focus on depth over breadth and on what actually helps the user think
+    and act.
+
+  Integration Techniques
+  ----------------------
+  1) Weave, don't list:
+     - Do not say "the dialectical lens says X, the pragmatic lens says Y".
+     - Combine their insights into a single narrative or argument.
+     - Let different perspectives appear as nuances within the same voice.
+  2) Find connections:
+     - Identify how different perspectives complement each other.
+     - Use one lens to clarify or ground another (e.g., phenomenology to
+       humanize systems thinking, pragmatism to test ideals).
+  3) Synthesize contradictions:
+     - Where lenses disagree, make the tension explicit.
+     - Show how the disagreement itself is informative.
+     - Offer ways to navigate trade-offs rather than forcing fake harmony.
+  4) Maintain a single voice:
+     - Write as a coherent analytical self that has digested the inputs.
+     - The style should be consistent from start to finish.
+  5) Focus on insights:
+     - Emphasize what the combined perspectives reveal that none could see
+       alone.
+     - Move from "what each lens said" to "what we now understand".
+
+  Quality Markers
+  ---------------
+  Effective synthesis:
+  - Reads as integrated thinking, not as a stitched summary.
+  - Addresses the original question directly with a clear through-line.
+  - Incorporates insights from multiple lenses in a natural way.
+  - Acknowledges complexity and irreducible tension without collapsing it.
+  - Provides actionable understanding or a concrete way to proceed.
+
+  Ineffective synthesis:
+  - Lists what each perspective says in sequence.
+  - Feels like a compilation, minutes-of-meeting, or bullet-point digest.
+  - Ignores contradictions between viewpoints or pretends they do not exist.
+  - Leans on lens jargon instead of speaking to the actual situation.
+  - Fails to give the user a clearer way to think or act.
+
+  Sample Integration Style
+  ------------------------
+  A synthesis might sound like this:
+
+  "This question sits at the intersection of multiple complex dynamics that
+  require careful consideration. The material conditions surrounding the choice
+  reveal how economic forces constrain available options, while the lived
+  experience of those facing this decision involves emotional and social
+  dimensions that pure abstraction misses. The apparent simplicity of the
+  choice masks deeper systemic patterns that generate unintended consequences,
+  yet practical constraints demand that we focus on approaches that can
+  actually be implemented and measured. Thinking in this way, a more honest
+  answer is not a single recommendation but a framework: one that names the
+  trade-offs, clarifies where we have leverage, and respects the human weight
+  of the decision."
+
+  Summary
+  -------
+  The synthesis lens ensures that multi-perspective analysis produces a
+  genuinely integrated understanding rather than a pile of disconnected
+  viewpoints. It turns many specialized voices into one clear, nuanced answer
+  that the user can actually use.
+assumptions:
+- The Epistemic Engine will first produce individual lens analyses before
+  invoking this synthesis lens.
+- All lens analyses are available in text form and can be treated as inputs
+  to a higher-level integration process.
+- Users benefit more from a single, coherent answer than from a list of
+  separate perspectives.
+- Some tensions between lenses will remain irreducible; the goal is to
+  navigate them, not erase them.
+pedagogy:
+- kind: Socratic
+  text: If I could only give the user one clear answer built from all these
+    perspectives, what would it be and why?
+- kind: Socratic
+  text: Where do the different lenses genuinely disagree, and how can that
+    disagreement sharpen, rather than blur, our decision?
+- kind: Socratic
+  text: Which insights keep appearing across multiple lenses, and what do
+    they suggest we should take most seriously?
+- kind: Socratic
+  text: How can I rewrite the core guidance so that it would still make
+    sense to someone who never saw the underlying lenses at all?
+- kind: Socratic
+  text: What concrete next step would respect both the complexity of the
+    situation and the user's need to move forward?
+- kind: Aphorism
+  text: Many lenses; one decision.
+- kind: Aphorism
+  text: Synthesis is not peace; it is clarity about the tensions we accept.
+- kind: Aphorism
+  text: A good answer feels like one mind that listened to many.
+- kind: Aphorism
+  text: The value of many perspectives is measured in the quality of the
+    next action, not the length of the appendix.
+- kind: Aphorism
+  text: Integration begins when we stop reporting and start deciding.
+provenance:
+  schema: provenance.v1
+  author: John Macgregor
+  org: Epistemic Engine Demo
+  license: MIT
+  source_url: ''
+  created: '2025-11-13T00:00:00Z'
+  updated: '2025-11-13T00:00:00Z'
+  review:
+    status: draft
+    reviewers: []
+    last_reviewed: null
+  signing:
+    method: ed25519
+    key_id: null
+    pubkey: null
+    digest: null
+    signature: null
+applies_to:
+- conversation
+- assistant
+- education
+dependencies:
+- epistemic.foundation_v1
+incompatible_with: []
+security:
+  sensitivity: low
+  notes: This capsule is purely informational and defines a reasoning pattern.
+    It carries no executable code and no direct operational effects.

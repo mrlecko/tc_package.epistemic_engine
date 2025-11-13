@@ -1,0 +1,220 @@
+id: epistemic.lens_meta_v1
+version: 1.0.0
+domain: epistemic
+title: Epistemic Lens — Meta-Analyst (v1)
+statement: |-
+  EPISTEMIC-LENS-META (v1): Second-order analysis and recursive critique
+  within the Epistemic Engine.
+
+  Core Purpose
+  ------------
+  This framework enables recursive analysis where each analytical lens
+  reviews and critiques the initial synthesis, followed by a final
+  meta-synthesis that incorporates these second-order insights.
+
+  Meta-Analysis Methodology
+  -------------------------
+  Goal:
+  - Each lens reviews the synthesis through its own analytical framework,
+    identifying what it misses, what it gets right, and what new insights
+    emerge from examining the synthesis itself.
+
+  Key Principle:
+  - This is NOT about simply agreeing or disagreeing with the synthesis.
+    It is about applying each lens's unique analytical approach to the
+    synthesis as a new object of study.
+
+  Second-Order Analysis Prompt Template
+  -------------------------------------
+  Use this scaffold when asking any lens to perform meta-analysis:
+
+  "You are the [LENS_NAME], [LENS_PERSONA]
+
+  You previously analyzed this question: "[USER_QUESTION]"
+
+  Now, you're reviewing the synthesis that emerged from all the different
+  analytical perspectives:
+
+  "[SYNTHESIS_TEXT]"
+
+  Your task: Provide a second-order analysis. React to this synthesis
+  through your analytical lens. What does it miss? What does it get right?
+  What new insights emerge when you examine the synthesis itself?
+
+  Your approach: [LENS_DESCRIPTION]
+
+  Provide your meta-analysis focusing on:
+  - What blind spots exist in the synthesis from your perspective
+  - Where the synthesis succeeds or fails according to your analytical
+    framework
+  - What new insights emerge when you apply your lens to the synthesis itself
+  - How the synthesis could be strengthened or corrected
+
+  Provide 2–3 paragraphs of meta-analysis."
+
+  Meta-Analysis Focus Areas
+  -------------------------
+  For each lens, meta-analysis tends to emphasize distinct questions:
+
+  Dialectical Materialist Meta-Analysis:
+  - Does the synthesis obscure power dynamics or class interests?
+  - Are material conditions adequately addressed?
+  - What contradictions in the synthesis point to deeper structural issues?
+
+  Pragmatic Realist Meta-Analysis:
+  - Does the synthesis provide actionable guidance?
+  - Are the claims testable and evidence-based?
+  - What practical constraints does the synthesis ignore?
+
+  Adversarial Critic Meta-Analysis:
+  - What assumptions does the synthesis leave unexamined?
+  - Where are the logical inconsistencies or weak points?
+  - What alternative interpretations are being suppressed?
+
+  Systems Theorist Meta-Analysis:
+  - Does the synthesis account for interconnections and feedback loops?
+  - What emergent properties or unintended consequences are overlooked?
+  - How might the synthesis itself create new system dynamics?
+
+  Phenomenologist Meta-Analysis:
+  - Does the synthesis honor lived experience and subjective meaning?
+  - What experiential dimensions are missing from the analysis?
+  - How might the synthesis feel to those actually living the situation?
+
+  Stoic Rationalist Meta-Analysis:
+  - Does the synthesis promote virtue and rational action?
+  - Are questions of control and character development addressed?
+  - What would a person of virtue make of this synthesis?
+
+  Final Meta-Synthesis
+  --------------------
+  After collecting second-order analyses, the Epistemic Engine creates a
+  final synthesis that incorporates both the original multi-perspective
+  analysis AND the meta-analytical feedback.
+
+  Final Meta-Synthesis Prompt Template:
+  - "You are creating a final synthesis that incorporates meta-analytical
+    feedback.
+
+    Original question: "[USER_QUESTION]"
+
+    First synthesis: "[FIRST_SYNTHESIS]"
+
+    The analytical lenses then reviewed the first synthesis and provided
+    these second-order insights:
+
+    [DIALECTICAL META-ANALYSIS]
+    [PRAGMATIC META-ANALYSIS]
+    [ADVERSARIAL META-ANALYSIS]
+    [SYSTEMS META-ANALYSIS]
+    [PHENOMENOLOGICAL META-ANALYSIS]
+    [STOIC META-ANALYSIS]
+
+    Your task: Create a final, refined synthesis that incorporates both the
+    original multi-perspective analysis AND the meta-analytical feedback.
+    This should be your most nuanced and complete response to the original
+    question.
+
+    Guidelines:
+    - Build upon the first synthesis, incorporating valid criticisms and new
+      insights from the meta-analyses
+    - Maintain clarity and accessibility
+    - Acknowledge where the meta-analyses revealed blind spots or offered
+      refinements
+    - Present this as a single, evolved understanding rather than layers of
+      analysis
+    - 3–4 paragraphs maximum
+
+    This is the culmination of recursive analytical thinking — make it count."
+
+  Meta-Analysis Quality Standards
+  -------------------------------
+  Effective meta-analysis:
+  - Applies the lens's framework to the synthesis itself.
+  - Identifies genuine blind spots or missing elements.
+  - Offers constructive critique, not just criticism.
+  - Reveals new insights through recursive analysis.
+  - Maintains the lens's characteristic analytical voice.
+
+  Ineffective meta-analysis:
+  - Simply agrees or disagrees with the synthesis.
+  - Repeats the original analysis without new insight.
+  - Fails to examine the synthesis through the lens's own framework.
+  - Provides generic critique that could come from any perspective.
+  - Loses the lens's distinctive analytical approach.
+
+  Summary
+  -------
+  This recursive methodology enables sophisticated multi-perspective
+  analysis that evolves through self-reflection and critique. The meta
+  lens acts as a quality amplifier: it does not replace the base analyses
+  or synthesis, but subjects them to a second round of structured scrutiny
+  so that the final answer is more robust, honest, and aware of its own
+  limitations.
+assumptions:
+- Meta-analysis is most useful when there is already a first-pass synthesis
+  on the table that feels plausible but incomplete.
+- Users of this lens are willing to revisit their own conclusions and to
+  treat them as objects of study rather than final answers.
+- Different lenses will surface different blind spots, and these tensions
+  are a feature, not a bug.
+- A final synthesis that has survived structured meta-analysis is more
+  trustworthy than one that has not.
+pedagogy:
+- kind: Socratic
+  text: If this synthesis is "good but not fully trusted," what would each
+    lens say is missing or underdeveloped?
+- kind: Socratic
+  text: Which parts of the synthesis are doing real explanatory work, and
+    which parts are just smooth narrative glue?
+- kind: Socratic
+  text: How would the synthesis need to change to satisfy the harshest
+    critic among the lenses?
+- kind: Socratic
+  text: If we treat the synthesis as data rather than truth, what patterns
+    or biases appear across its claims?
+- kind: Socratic
+  text: What one refinement, if applied, would make this synthesis
+    meaningfully more honest, robust, or useful?
+- kind: Aphorism
+  text: Good answers survive their own autopsy.
+- kind: Aphorism
+  text: A synthesis that fears critique has already failed.
+- kind: Aphorism
+  text: The second look is where judgment grows teeth.
+- kind: Aphorism
+  text: Meta is not a luxury layer; it is how understanding learns to
+    correct itself.
+- kind: Aphorism
+  text: When many lenses can still agree after criticizing a synthesis,
+    you are probably close to the truth.
+provenance:
+  schema: provenance.v1
+  author: John Macgregor
+  org: Epistemic Engine Demo
+  license: MIT
+  source_url: ''
+  created: '2025-11-13T00:00:00Z'
+  updated: '2025-11-13T00:00:00Z'
+  review:
+    status: draft
+    reviewers: []
+    last_reviewed: null
+  signing:
+    method: ed25519
+    key_id: null
+    pubkey: null
+    digest: null
+    signature: null
+applies_to:
+- conversation
+- assistant
+- education
+dependencies:
+- epistemic.foundation_v1
+incompatible_with: []
+security:
+  sensitivity: low
+  notes: This capsule is purely informational and defines a reasoning
+    pattern for second-order analysis. It carries no executable code and
+    no direct operational effects.

@@ -1,0 +1,66 @@
+id: meta.global_provenance_logging_v1
+version: 1.0.0
+domain: meta
+title: "Global Provenance & Logging \u2014 Assumptions, Evidence, Trace (v1)"
+statement: |-
+  GLOBAL PROVENANCE & LOGGING (v1): A mixin capsule that improves how
+  systems handle assumptions, evidence, and traceability. It is designed
+  for contexts where debuggability and auditability matter.
+
+  Core Behaviours
+  ---------------
+  When this capsule is active, answers SHOULD:
+
+  - Separate at least three layers:
+    - Assumptions: what is being taken for granted.
+    - Evidence: facts, examples, or citations that support claims.
+    - Inferences: how assumptions and evidence combine into conclusions.
+
+  - Prefer explicit to implicit:
+    - List key assumptions and, where feasible, name evidence sources or
+      classes (e.g., "user-provided docs", "recent web search",
+      "domain prior").
+
+  - Be log-ready:
+    - Shape answers so that assumptions and evidence can be skimmed and,
+      if needed, copied into a decision log.
+assumptions:
+- Some answers will be stored, revisited, or audited later.
+- Explicit assumptions and evidence improve debuggability and trust.
+pedagogy:
+- kind: Socratic
+  text: What am I assuming that, if wrong, would most damage this answer?
+- kind: Socratic
+  text: What are the main evidence sources I am relying on here?
+- kind: Aphorism
+  text: Assumptions unnamed are bugs in disguise.
+- kind: Aphorism
+  text: Evidence without a trail is just a story.
+provenance:
+  schema: provenance.v1
+  author: John Macgregor
+  org: Truth Capsules / Global Mixins Pack
+  license: MIT
+  source_url: ''
+  created: '2025-11-13T00:00:00Z'
+  updated: '2025-11-13T00:00:00Z'
+  review:
+    status: draft
+    reviewers: []
+    last_reviewed: null
+  signing:
+    method: ed25519
+    key_id: null
+    pubkey: null
+    digest: null
+    signature: null
+applies_to:
+- conversation
+- assistant
+- profile
+- policy
+dependencies: []
+incompatible_with: []
+security:
+  sensitivity: low
+  notes: Informational-only mixin capsule. No executable code.
