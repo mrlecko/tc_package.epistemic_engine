@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/task.schema.v1.json",
+  "title": "Truth Capsules Task v1",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "title",
+    "engine",
+    "inputs",
+    "outputs"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique task id (e.g., task.epistemic.multi_lens_analysis_v1)."
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version (e.g., 1.0.0).",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable task title."
+    },
+    "description": {
+      "type": "string",
+      "description": "Longer description of what this task does."
+    },
+    "applies_to": {
+      "type": "array",
+      "description": "Contexts where this task is applicable.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "conversation",
+          "cli",
+          "tool_runner",
+          "ci",
+          "spa"
+        ]
+      }
+    },
+    "engine": {
+      "type": "object",
+      "description": "Execution engine and entrypoint for this task.",
+      "required": [
+        "kind",
+        "entrypoint"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "description": "Engine type (e.g., shell, python, llm)."
+        },
+        "entrypoint": {
+          "type": "string",
+          "description": "Path to script or command to invoke."
+        },
+        "args_template": {
+          "type": "string",
+          "description": "Templated arguments string; supports {{input.*}} and {{env.*}}."
+        },
+        "env": {
+          "type": "object",
+          "description": "Optional environment variable hints/defaults.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "object",
+      "description": "Input contract for this task.",
+      "required": [
+        "required"
+      ],
+      "properties": {
+        "required": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          }
+        },
+        "optional": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "default": {}
+            },
+            "required": [
+              "type"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "outputs": {
+      "type": "object",
+      "description": "Output contract for this task.",
+      "required": [
+        "format"
+      ],
+      "properties": {
+        "format": {
+          "type": "string",
+          "description": "Output format (e.g., json, text, md)."
+        },
+        "schema": {
+          "type": "string",
+          "description": "Optional JSON Schema path/id for JSON outputs."
+        },
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of the output."
+        }
+      },
+      "additionalProperties": false
+    },
+    "bindings": {
+      "type": "object",
+      "description": "Bindings into Truth Capsules world (profiles, bundles).",
+      "properties": {
+        "default_profile": {
+          "type": "string",
+          "description": "Default profile id for this task."
+        },
+        "default_bundle": {
+          "type": "string",
+          "description": "Default bundle id for this task."
+        }
+      },
+      "additionalProperties": false
+    },
+    "tags": {
+      "type": "array",
+      "description": "Freeform tags for discovery/filtering.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Implementation notes or caveats."
+    }
+  },
+  "additionalProperties": false
+}

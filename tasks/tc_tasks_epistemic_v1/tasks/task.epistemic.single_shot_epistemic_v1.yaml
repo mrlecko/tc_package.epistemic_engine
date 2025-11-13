@@ -1,0 +1,52 @@
+id: task.epistemic.single_shot_epistemic_v1
+version: 1.0.0
+title: Epistemic Engine – Single-Shot Analysis
+description: |-
+  Run the Epistemic Engine in single-shot mode:
+  - Compose all relevant epistemic lenses and mixins into a single
+    system prompt
+  - Make one LLM call that returns a structured JSON synthesis
+
+  Intended usage:
+  - Fast feedback in interactive sessions
+  - Lower-cost environments
+  - Drafting an initial view before deeper multi-lens runs
+applies_to:
+  - conversation
+  - cli
+  - tool_runner
+  - spa
+engine:
+  kind: shell
+  entrypoint: scripts/run_epistemic_engine_llm.py
+  args_template: |-
+    --question "{{input.question}}"
+    --profile "{{bindings.default_profile}}"
+    --bundle "{{bindings.default_bundle}}"
+    --model "${LLM_MODEL:-gpt-4o-mini}"
+    --mode single
+inputs:
+  required:
+    question:
+      type: string
+      description: Original user question or problem statement.
+  optional: {}
+outputs:
+  format: json
+  schema: schemas/epistemic.engine_output.schema.v1.json
+  description: |-
+    Epistemic Engine single-shot JSON output containing:
+    - a synthesized view across lenses
+    - explicit recommendations and uncertainties.
+bindings:
+  default_profile: profile.epistemic.multi_lens_analyst
+  default_bundle: bundle.epistemic_engine_runner_v1
+tags:
+  - epistemic_engine
+  - single_shot
+  - structured_output
+  - analysis
+notes: |-
+  This task trades fine-grained per-lens observability for speed
+  and cost-efficiency. Prefer the multi-lens task when you need
+  explicit per-lens reasoning traces.

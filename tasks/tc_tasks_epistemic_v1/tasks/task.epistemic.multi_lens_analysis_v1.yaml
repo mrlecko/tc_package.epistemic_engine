@@ -1,0 +1,55 @@
+id: task.epistemic.multi_lens_analysis_v1
+version: 1.0.0
+title: Epistemic Engine – Multi-Lens Analysis
+description: |-
+  Run the full Epistemic Engine in multi-lens mode:
+  - Execute all configured epistemic lenses (Stoic, Pragmatic, Systems, etc.)
+  - Collect structured JSON outputs per lens
+  - Run a synthesis pass to produce a final integrated view
+
+  Intended usage:
+  - Deep reasoning on complex, ambiguous questions
+  - Decision support where multiple perspectives matter
+  - CI / batch workflows where JSON outputs are consumed by tools
+applies_to:
+  - conversation
+  - cli
+  - tool_runner
+  - spa
+engine:
+  kind: shell
+  entrypoint: scripts/run_epistemic_engine_llm.py
+  args_template: |-
+    --question "{{input.question}}"
+    --profile "{{bindings.default_profile}}"
+    --bundle "{{bindings.default_bundle}}"
+    --model "${LLM_MODEL:-gpt-4o-mini}"
+    --mode multi
+inputs:
+  required:
+    question:
+      type: string
+      description: Original user question or problem statement.
+  optional: {}
+outputs:
+  format: json
+  schema: schemas/epistemic.engine_output.schema.v1.json
+  description: |-
+    Epistemic Engine output JSON containing:
+    - per-lens analyses (subset view)
+    - final synthesis with agreements, disagreements,
+      recommendations, and uncertainties.
+bindings:
+  default_profile: profile.epistemic.multi_lens_analyst
+  default_bundle: bundle.epistemic_engine_runner_v1
+tags:
+  - epistemic_engine
+  - multi_lens
+  - structured_output
+  - analysis
+notes: |-
+  This task assumes that:
+  - scripts/run_epistemic_engine_llm.py is available in the repo
+  - Epistemic Engine capsules, bundles, and profiles are merged into
+    the Truth Capsules tree
+  - The `llm` CLI is installed and configured for the selected model.
