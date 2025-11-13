@@ -26,5 +26,7 @@ python scripts/bundle_linter.py bundles
 pytest
 ```
 
-You can then open the SPA (or use the CLI) and select the Epistemic Engine
-profile / bundle to run multi-lens analyses.
+You can then open the SPA (or use the CLI) and select the Epistemic Engine profile / bundle to run multi-lens analyses.
+
+v0.0.0 - use for inspiration only
+
